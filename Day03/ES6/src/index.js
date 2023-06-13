@@ -2,9 +2,9 @@ import Marks from "./marks"
 import Student from "./student";
 
 const resultPercentage = (arrayOfStudents)=>{
-    const mps = arrayOfStudents.length;
     return arrayOfStudents.map(student=>{
         student.calcTotalMarks();
+        const mps = student.marks.length;
         return (student.totalMarks / mps);
     })
 }
@@ -45,9 +45,9 @@ student2.marks = [student2MarksInMaths, student2MarksInScience, student2MarksInS
 const student3 = new Student("16","Saurabh","Kushwaha")
 
 
-const student3MarksInScience = new Marks("Science",40)
-const student3MarksInMaths = new Marks("Maths",50)
-const student3MarksInSocial = new Marks("Social",60)
+const student3MarksInScience = new Marks("Science",60)
+const student3MarksInMaths = new Marks("Maths",30)
+const student3MarksInSocial = new Marks("Social",100)
 
 student3.marks = [student3MarksInMaths, student3MarksInScience, student3MarksInSocial];
 
