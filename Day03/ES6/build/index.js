@@ -4,9 +4,9 @@ var _marks = _interopRequireDefault(require("./marks"));
 var _student = _interopRequireDefault(require("./student"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const resultPercentage = arrayOfStudents => {
-  const mps = arrayOfStudents.length;
   return arrayOfStudents.map(student => {
     student.calcTotalMarks();
+    const mps = student.marks.length;
     return student.totalMarks / mps;
   });
 };
