@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validate()">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </p>
+        <p>
+            <label for="mobile">Mobile:</label>
+            <input type="text" name="mobile" id="mobile">
+        </p>
+        <p>
+            Gender:
+            <input type="radio"  id="male" name="gender"> 
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+        </p>
+        <p>
+            Hobbies: 
+            <input type="checkbox" name="hobby" id="Reading"> Reading
+            <input type="checkbox" name="hobby" id="Reading"> Chess
+            <input type="checkbox" name="hobby" id="Reading"> Cooking
+
+        </p>
+        <input type="submit" value="submit">
+        <input type="button" value="reset" name="resetfm">
+    </form>
+</body>
+<script src="validation.js"></script>
+</html>
