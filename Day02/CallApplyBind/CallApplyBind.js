@@ -31,7 +31,7 @@ function person(name,year){
     //apply
     getOwnersVehicleDetail.apply(neo,[aryn,"AMD"])
     //bind
-    detailOfJaysVehicle=getOwnersVehicleDetail.bind(audi,jay,"CHN")
+    detailOfJaysVehicle=getOwnersVehicleDetail.bind(thar,jay,"CHN")
 
     detailOfJaysVehicle();
 
