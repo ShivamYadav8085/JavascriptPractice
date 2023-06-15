@@ -1,6 +1,5 @@
 
 const div = document.querySelector("#container") as HTMLDivElement
-const todos:HTMLParagraphElement[] =[]
 const add=()=>{
     const todoTextBox = document.getElementById("todo") as HTMLInputElement;
     const value:string = todoTextBox.value;
@@ -22,8 +21,10 @@ const add=()=>{
         todoDiv.append(todoText,deleteTodo)
 
         deleteTodo.addEventListener("click",event=>{
-            const target = event.target as HTMLSpanElement
-            target.parentElement?.remove();
+            if (confirm("Have you completed this task?")) {
+                const target = event.target as HTMLSpanElement
+                target.parentElement?.remove();
+            }
         })
 
         todoText.addEventListener("click",event=>{
