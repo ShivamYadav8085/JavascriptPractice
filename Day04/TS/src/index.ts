@@ -9,7 +9,7 @@ const addEmployeeWithDefaultValueFalse=(id:number,name:string,isPermanent:boolea
 const updateEmployee=(id:number,isPermanent?:boolean)=>{
     const employee = employees.find(employee=>employee[0]===id)
     if (employee) {
-        if(isPermanent){
+        if(isPermanent!==undefined){
             employee[2]=isPermanent;
             console.log(`Employee with id ${id} updated`);
         }else{
