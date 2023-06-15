@@ -2,8 +2,8 @@
 const div = document.querySelector("#container") as HTMLDivElement
 const todos:HTMLParagraphElement[] =[]
 const add=()=>{
-    const todoText = document.getElementById("todo") as HTMLInputElement;
-    const value:string = todoText.value;
+    const todoTextBox = document.getElementById("todo") as HTMLInputElement;
+    const value:string = todoTextBox.value;
     if(value===""){
         alert("please enter valid todo")
     }else{
@@ -31,5 +31,6 @@ const add=()=>{
             target.style.textDecoration='line-through'
         })
         div.append(todoDiv)
+        todoTextBox.value = ""
     }
 }
